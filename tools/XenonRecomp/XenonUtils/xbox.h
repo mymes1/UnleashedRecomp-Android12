@@ -29,14 +29,7 @@ struct be
 {
     T value;
 
-    be() : value(0)
-    {
-    }
-
-    be(const T v)
-    {
-        set(v);
-    }
+    be() = default;
 
     static T byteswap(T value)
     {
@@ -243,17 +236,17 @@ typedef struct _XOVERLAPPED {
 typedef struct _XXOVERLAPPED {
     union
     {
-        struct ErrorLength
+        struct
         {
-            be<uint32_t> Error;
-            be<uint32_t> Length;
-        } ErrorInfo;
+            uint32_t Error;
+            uint32_t Length;
+        };
 
-        struct InternalValues
+        struct
         {
             uint32_t InternalLow;
             uint32_t InternalHigh;
-        } Internal;
+        };
     };
     uint32_t InternalContext;
     be<uint32_t> hEvent;

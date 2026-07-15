@@ -128,11 +128,11 @@ struct XACHEntry
 
 union XDBFTitleID
 {
-    struct Value
+    struct
     {
         be<uint16_t> u16;
         char u8[0x02];
-    } value;
+    };
 
     be<uint32_t> u32;
 };
@@ -201,4 +201,3 @@ struct XSRCHeader2
     be<uint32_t> UncompressedSize;
     be<uint32_t> CompressedSize;
 };
-
