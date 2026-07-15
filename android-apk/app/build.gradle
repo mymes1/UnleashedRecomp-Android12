@@ -1,0 +1,91 @@
+def buildAsLibrary = project.hasProperty('BUILD_AS_LIBRARY');
+def buildAsApplication = !buildAsLibrary
+if (buildAsApplication) {
+    apply plugin: 'com.android.application'
+}
+else {
+    apply plugin: 'com.android.library'
+}
+
+android {
+    if (buildAsApplication) {
+        namespace "org.libsdl.app"
+    }
+    compileSdkVersion 34
+    ndkVersion "29.0.14206865"
+    defaultConfig {
+        // Java sources and JNI bindings stay in the org.libsdl.app namespace (SDL
+        // registers natives against those class names); only the install identity
+        // changes. Renaming this orphans data under Android/data/<old id>.
+        applicationId "com.sega.sonicunr"
+        minSdkVersion 29
+        targetSdkVersion 34
+        versionCode 16
+        versionName "0.5.2"
+        externalNativeBuild {
+            ndkBuild {
+                arguments "APP_PLATFORM=android-29"
+                abiFilters 'arm64-v8a'
+            }
+            // cmake {
+            //     arguments "-DANDROID_APP_PLATFORM=android-19", "-DANDROID_STL=c++_static"
+            //     // abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            //     abiFilters 'arm64-v8a'
+            // }
+        }
+    }
+    // CI provides the release keystore through environment variables (see
+    // .github/workflows/android.yml); local release builds stay unsigned.
+    if (System.getenv("ANDROID_KEYSTORE_FILE") != null) {
+        signingConfigs {
+            ci {
+                storeFile file(System.getenv("ANDROID_KEYSTORE_FILE"))
+                storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
+                keyAlias System.getenv("ANDROID_KEY_ALIAS")
+                keyPassword System.getenv("ANDROID_KEY_PASSWORD")
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (System.getenv("ANDROID_KEYSTORE_FILE") != null) {
+                signingConfig signingConfigs.ci
+            }
+        }
+    }
+    // UnleashedRecomp's libmain.so is built separately by the project's own CMake pipeline
+    // (see build_android_target.bat) and copied into src/main/jniLibs/arm64-v8a/ manually;
+    // Gradle's own ndk-build of jni/Android.mk (which would produce a conflicting SDL2-only
+    // libmain.so) is intentionally not used here.
+    // Legacy (extracted-to-disk) native lib packaging is required while
+    // libVkLayer_khronos_validation.so is bundled in jniLibs/: Android's Vulkan loader
+    // discovers app-provided layers by scanning ApplicationInfo.nativeLibraryDir on disk,
+    // which only exists with real files when libs are extracted rather than mapped
+    // directly from the (compressed) APK zip. Remove once validation is no longer needed.
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+    lint {
+        abortOnError false
+    }
+
+    if (buildAsLibrary) {
+        libraryVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith(".aar")) {
+                    def fileName = "org.libsdl.app.aar";
+                    output.outputFile = new File(outputFile.parent, fileName);
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}

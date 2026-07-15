@@ -1,0 +1,53 @@
+modules = ["java-graalvm22.3", "bash"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Apk"
+mode = "sequential"
+author = 44031176
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "# Force jump to the project folder using strict string bounds cd \"android-apk\"  # Ensure script wrapper permissions are unlocked  chmod +x ./gradlew  # Execute the APK compilation ./gradlew assembleDebug --no-daemon"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "AndroidSdk"
+
+[[workflows.workflow]]
+name = "Build"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd /home/runner/workspace && export VCPKG_ROOT=/home/runner/workspace/thirdparty/vcpkg && export LD_LIBRARY_PATH=/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib:/nix/store/jl19fdc7gdxqz9a1s368r9d15vpirnqy-zlib-1.3.1/lib:$LD_LIBRARY_PATH && (cmake . --preset linux-release -DCMAKE_C_COMPILER_AR=/nix/store/2gkh9v7wrzjq6ws312c6z6ajwnjvwcmb-binutils-wrapper-2.44/bin/ar -DCMAKE_C_COMPILER_RANLIB=/nix/store/2gkh9v7wrzjq6ws312c6z6ajwnjvwcmb-binutils-wrapper-2.44/bin/ranlib -DCMAKE_CXX_COMPILER_AR=/nix/store/2gkh9v7wrzjq6ws312c6z6ajwnjvwcmb-binutils-wrapper-2.44/bin/ar -DCMAKE_CXX_COMPILER_RANLIB=/nix/store/2gkh9v7wrzjq6ws312c6z6ajwnjvwcmb-binutils-wrapper-2.44/bin/ranlib && cmake --build ./out/build/linux-release --target UnleashedRecomp) > /tmp/full_build.log 2>&1; echo BUILD_EXIT_CODE=$? >> /tmp/full_build.log; sleep infinity"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[workflows.workflow]]
+name = "AndroidSdk"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "export ANDROID_HOME=/home/runner/android-sdk && (\"$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager\" \"ndk;29.0.14206865\" \"platform-tools\" \"platforms;android-29\" \"build-tools;34.0.0\" > /tmp/sdk_install.log 2>&1); echo SDK_INSTALL_EXIT=$? >> /tmp/sdk_install.log; sleep infinity"
+
+[workflows.workflow.metadata]
+outputType = "console"

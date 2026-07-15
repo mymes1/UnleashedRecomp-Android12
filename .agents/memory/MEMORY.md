@@ -1,0 +1,1 @@
+- [UnleashedRecomp-Android build/RE constraints](unleashedrecomp-android.md) — can't build/run here (no NDK, no game files); camera position offsets are unmapped, don't guess them.
