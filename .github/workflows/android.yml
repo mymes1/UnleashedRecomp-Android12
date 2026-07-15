@@ -50,14 +50,21 @@ jobs:
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;$NDK_VERSION" >/dev/null
 
       - name: Set up vcpkg
-  run: |
-    if [ ! -d "thirdparty/vcpkg" ]; then
-      echo "::error::thirdparty/vcpkg not found."
-      exit 1
-    fi
+        run: |
+          if [ ! -d "thirdparty/vcpkg" ]; then
+            echo "::error::thirdparty/vcpkg not found."
+            exit 1
+          fi
 
-    chmod +x thirdparty/vcpkg/bootstrap-vcpkg.sh
-    ./thirdparty/vcpkg/bootstrap-vcpkg.sh -disableMetrics
+          if [ ! -f "thirdparty/vcpkg/bootstrap-vcpkg.sh" ]; then
+            echo "::error::bootstrap-vcpkg.sh not found."
+            exit 1
+          fi
+
+          chmod +x thirdparty/vcpkg/bootstrap-vcpkg.sh
+          ./thirdparty/vcpkg/bootstrap-vcpkg.sh -disableMetrics
+
+          echo "VCPKG_ROOT=$GITHUB_WORKSPACE/thirdparty/vcpkg" >> "$GITHUB_ENV"
 
       - name: Cache vcpkg binary archives
         uses: actions/cache@v4
