@@ -1,0 +1,21 @@
+Downloading https://github.com/google/brotli/archive/v1.1.0.tar.gz -> google-brotli-v1.1.0.tar.gz
+Successfully downloaded google-brotli-v1.1.0.tar.gz
+-- Extracting source /home/runner/workspace/thirdparty/vcpkg/downloads/google-brotli-v1.1.0.tar.gz
+-- Applying patch install.patch
+-- Applying patch fix-arm-uwp.patch
+-- Applying patch pkgconfig.patch
+-- Applying patch emscripten.patch
+-- Using source at /home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/src/v1.1.0-958bece74c.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/pkgconfig/libbrotlicommon.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/pkgconfig/libbrotlidec.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/pkgconfig/libbrotlienc.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/debug/lib/pkgconfig/libbrotlicommon.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/debug/lib/pkgconfig/libbrotlidec.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/debug/lib/pkgconfig/libbrotlienc.pc
+-- Installing: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/share/brotli/usage
+-- Installing: /home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/share/brotli/copyright
+-- Adjusted RPATH of '/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/tools/brotli/brotli' (From '/nix/store/9p0szbp369clywas4gmdmb486hhaq654-nix-shell/lib:/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib:/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Performing post-build validation

@@ -1,0 +1,10 @@
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/brotlicommon.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/brotlidec.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/brotlienc.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/brotli.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/edit_cache.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/rebuild_cache.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/list_install_components.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/install.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/install/local.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/brotli/x64-linux-dbg/CMakeFiles/install/strip.dir

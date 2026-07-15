@@ -1,0 +1,4 @@
+/home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/lib/libbz2.a
+/home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/tools/bzip2/bzip2
+/home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/tools/bzip2/bzip2recover
+/home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/include/bzlib.h

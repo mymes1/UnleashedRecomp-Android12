@@ -1,0 +1,38 @@
+-- Configuring x64-linux-rel
+-- The C compiler identification is GNU 14.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/a0d7m3zn9p2dfa1h7ag9h2wzzr2w25sn-gcc-wrapper-14.2.1.20250322/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is GNU 14.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/a0d7m3zn9p2dfa1h7ag9h2wzzr2w25sn-gcc-wrapper-14.2.1.20250322/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (5.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/runner/workspace/thirdparty/vcpkg/buildtrees/detect_compiler/x64-linux-rel
+
+#COMPILER_HASH#3e55099d6defb521cf3f5540c7edb575c01cdba9
+#COMPILER_C_HASH#f326c08a3ac3b56b2717aa23c54471df928e576c
+#COMPILER_C_VERSION#14.2.1
+#COMPILER_C_ID#GNU
+#COMPILER_C_PATH#/nix/store/a0d7m3zn9p2dfa1h7ag9h2wzzr2w25sn-gcc-wrapper-14.2.1.20250322/bin/gcc
+#COMPILER_CXX_HASH#0352efac1e189bad6fef80f32751072f1b600e51
+#COMPILER_CXX_VERSION#14.2.1
+#COMPILER_CXX_ID#GNU
+#COMPILER_CXX_PATH#/nix/store/a0d7m3zn9p2dfa1h7ag9h2wzzr2w25sn-gcc-wrapper-14.2.1.20250322/bin/g++
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_SHARED_LIBS
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_LIBDIR
+    VCPKG_PLATFORM_TOOLSET
+    VCPKG_SET_CHARSET_FLAG
+    _VCPKG_ROOT_DIR
+
+
+

@@ -1,0 +1,38 @@
+crypto/err/libcrypto-lib-err_all_legacy.o: \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/crypto/err/err_all_legacy.c \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/cryptoerr_legacy.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/macros.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/opensslconf.h \
+ include/openssl/configuration.h include/openssl/opensslv.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/symhacks.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/e_os2.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/err.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/asn1err.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/asyncerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/bnerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/buffererr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/bioerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/cmserr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/comperr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/conferr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/cryptoerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/cterr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/dherr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/dsaerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/internal/dsoerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/ecerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/engineerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/evperr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/httperr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/objectserr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/ocsperr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/pemerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/pkcs12err.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/pkcs7err.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/randerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/rsaerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/storeerr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/tserr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/uierr.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/x509err.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/crypto/x509v3err.h

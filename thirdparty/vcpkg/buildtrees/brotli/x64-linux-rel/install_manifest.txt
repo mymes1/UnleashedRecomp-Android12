@@ -1,0 +1,14 @@
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/tools/brotli/brotli
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/libbrotlienc.a
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/libbrotlidec.a
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/libbrotlicommon.a
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/include/brotli/decode.h
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/include/brotli/encode.h
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/include/brotli/port.h
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/include/brotli/shared_dictionary.h
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/include/brotli/types.h
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/share/unofficial-brotli/unofficial-brotli-config.cmake
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/share/unofficial-brotli/unofficial-brotli-config-release.cmake
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/pkgconfig/libbrotlicommon.pc
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/pkgconfig/libbrotlidec.pc
+/home/runner/workspace/thirdparty/vcpkg/packages/brotli_x64-linux/lib/pkgconfig/libbrotlienc.pc

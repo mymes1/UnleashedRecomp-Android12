@@ -1,0 +1,247 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Replace com.test.game with the identifier of your game below, e.g.
+4     com.gamemaker.game
+5-->
+6<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+7    package="com.sega.sonicunr"
+8    android:installLocation="auto"
+9    android:versionCode="16"
+10    android:versionName="0.5.2" >
+11
+12    <uses-sdk
+13        android:minSdkVersion="29"
+14        android:targetSdkVersion="34" />
+15
+16    <!-- OpenGL ES 2.0 -->
+17    <uses-feature android:glEsVersion="0x00020000" />
+17-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:9:5-54
+17-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:9:19-51
+18
+19    <!-- Touchscreen support -->
+20    <uses-feature
+20-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:12:5-14:36
+21        android:name="android.hardware.touchscreen"
+21-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:13:9-52
+22        android:required="false" />
+22-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:14:9-33
+23
+24    <!-- Game controller support -->
+25    <uses-feature
+25-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:17:5-19:36
+26        android:name="android.hardware.bluetooth"
+26-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:18:9-50
+27        android:required="false" />
+27-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:19:9-33
+28    <uses-feature
+28-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:20:5-22:36
+29        android:name="android.hardware.gamepad"
+29-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:21:9-48
+30        android:required="false" />
+30-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:22:9-33
+31    <uses-feature
+31-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:23:5-25:36
+32        android:name="android.hardware.usb.host"
+32-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:24:9-49
+33        android:required="false" />
+33-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:25:9-33
+34
+35    <!-- External mouse input events -->
+36    <uses-feature
+36-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:28:5-30:36
+37        android:name="android.hardware.type.pc"
+37-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:29:9-48
+38        android:required="false" />
+38-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:30:9-33
+39
+40    <!-- Audio recording support -->
+41    <!-- if you want to capture audio, uncomment this. -->
+42    <!--
+43         <uses-feature
+44        android:name="android.hardware.microphone"
+45        android:required="false" />
+46    -->
+47
+48
+49    <!-- Allow downloading to the external storage on Android 5.1 and older -->
+50    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="22" /> -->
+51
+52
+53    <!-- Allow access to Bluetooth devices -->
+54    <!-- Currently this is just for Steam Controller support and requires setting SDL_HINT_JOYSTICK_HIDAPI_STEAM -->
+55    <!-- <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" /> -->
+56    <!-- <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> -->
+57
+58
+59    <!-- Allow access to the vibrator -->
+60    <uses-permission android:name="android.permission.VIBRATE" />
+60-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:47:5-66
+60-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:47:22-63
+61
+62    <!-- GitHub release checks and hand-off to Android's package installer. -->
+63    <uses-permission android:name="android.permission.INTERNET" />
+63-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:50:5-67
+63-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:50:22-64
+64    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+64-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:51:5-83
+64-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:51:22-80
+65
+66    <!-- if you want to capture audio, uncomment this. -->
+67    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+68    <!--
+69 Create a Java class extending SDLActivity and place it in a
+70         directory under app/src/main/java matching the package, e.g. app/src/main/java/com/gamemaker/game/MyGame.java
+71 
+72         then replace "SDLActivity" with the name of your class (e.g. "MyGame")
+73         in the XML below.
+74
+75         An example Java class can be found in README-android.md
+76    -->
+77    <application
+77-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:64:5-149:19
+78        android:allowBackup="true"
+78-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:66:9-35
+79        android:debuggable="true"
+80        android:extractNativeLibs="true"
+81        android:hardwareAccelerated="true"
+81-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:68:9-43
+82        android:icon="@mipmap/ic_launcher"
+82-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:65:9-43
+83        android:label="@string/app_name"
+83-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:64:18-50
+84        android:theme="@style/AppTheme" >
+84-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:67:9-40
+85        <activity
+85-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:70:9-79:20
+86            android:name="org.libsdl.app.LauncherActivity"
+86-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:71:13-45
+87            android:exported="true"
+87-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:73:13-36
+88            android:label="@string/app_name"
+88-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:72:13-45
+89            android:theme="@style/LauncherTheme" >
+89-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:74:13-49
+90            <intent-filter>
+90-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:75:13-78:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:76:17-69
+91-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:76:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:77:17-77
+93-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:77:27-74
+94            </intent-filter>
+95        </activity>
+96
+97        <!--
+98        Example of setting SDL hints from AndroidManifest.xml:
+99        <meta-data android:name="SDL_ENV.SDL_ACCELEROMETER_AS_JOYSTICK" android:value="0"/>
+100        -->
+101
+102        <activity
+102-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:85:9-113:20
+103            android:name="org.libsdl.app.SDLActivity"
+103-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:85:19-45
+104            android:alwaysRetainTaskState="true"
+104-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:87:13-49
+105            android:configChanges="layoutDirection|locale|orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+105-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:89:13-156
+106            android:exported="true"
+106-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:91:13-36
+107            android:label="@string/app_name"
+107-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:86:13-45
+108            android:launchMode="singleInstance"
+108-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:88:13-48
+109            android:preferMinimalPostProcessing="true"
+109-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:90:13-55
+110            android:screenOrientation="sensorLandscape" >
+110-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:92:13-56
+111
+112            <!--
+113                 The engine always creates a 1280x720 (landscape) window with
+114                 SDL_WINDOW_RESIZABLE set and no SDL_HINT_ORIENTATIONS hint, which makes
+115                 SDLActivity.setOrientationBis() fall through to SCREEN_ORIENTATION_FULL_USER
+116                 (i.e. defer entirely to the phone's own rotation lock/sensor state) instead of
+117                 forcing landscape - on a phone locked to or currently held in portrait this
+118                 renders the game sideways. Declaring the orientation here in the manifest
+119                 takes effect from the very first frame, with no runtime hint/timing race.
+120            -->
+121            <!-- Let Android know that we can handle some USB devices and should receive this event -->
+122            <intent-filter>
+122-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:102:13-104:29
+123                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+123-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:103:17-90
+123-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:103:25-87
+124            </intent-filter>
+125            <!-- Drop file event -->
+126            <!--
+127            <intent-filter>
+128                <action android:name="android.intent.action.VIEW" />
+129                <category android:name="android.intent.category.DEFAULT" />
+130                <data android:mimeType="*/*" />
+131            </intent-filter>
+132            -->
+133        </activity>
+134
+135        <!-- Opened from the unified launcher; no separate home-screen icon. -->
+136        <activity
+136-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:116:9-120:54
+137            android:name="org.libsdl.app.ModManagerActivity"
+137-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:117:13-47
+138            android:exported="false"
+138-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:119:13-37
+139            android:label="@string/mod_manager_launcher_name"
+139-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:118:13-62
+140            android:theme="@style/ModManagerTheme" />
+140-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:120:13-51
+141        <activity
+141-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:122:9-126:54
+142            android:name="org.libsdl.app.ModSettingsActivity"
+142-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:123:13-48
+143            android:exported="false"
+143-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:125:13-37
+144            android:label="@string/mod_settings_title"
+144-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:124:13-55
+145            android:theme="@style/ModManagerTheme" />
+145-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:126:13-51
+146
+147        <!--
+148             Expose app-owned game files through Android's Storage Access Framework.
+149             MANAGE_DOCUMENTS is a signature permission: only the system DocumentsUI can
+150             browse the provider directly, and it grants callers narrow URI permissions.
+151        -->
+152        <provider
+153            android:name="org.libsdl.app.UnleashedDocumentsProvider"
+153-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:132:13-55
+154            android:authorities="com.sega.sonicunr.documents"
+154-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:133:13-61
+155            android:exported="true"
+155-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:134:13-36
+156            android:grantUriPermissions="true"
+156-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:135:13-47
+157            android:permission="android.permission.MANAGE_DOCUMENTS" >
+157-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:136:13-69
+158            <intent-filter>
+158-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:137:13-139:29
+159                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+159-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:138:17-84
+159-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:138:25-81
+160            </intent-filter>
+161        </provider>
+162
+163        <!--
+164             Serves only cache/updates/UnleashedRecomp_update.apk, read-only, after
+165             UpdateManager verifies its GitHub digest and signing certificate.
+166        -->
+167        <provider
+168            android:name="org.libsdl.app.UpdateFileProvider"
+168-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:145:13-47
+169            android:authorities="com.sega.sonicunr.updates"
+169-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:146:13-59
+170            android:exported="false"
+170-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:147:13-37
+171            android:grantUriPermissions="true" />
+171-->/home/runner/workspace/android-apk/app/src/main/AndroidManifest.xml:148:13-47
+172    </application>
+173
+174</manifest>

@@ -1,0 +1,7 @@
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/bz2.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/edit_cache.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/rebuild_cache.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/list_install_components.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/install.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/install/local.dir
+/home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/x64-linux-dbg/CMakeFiles/install/strip.dir

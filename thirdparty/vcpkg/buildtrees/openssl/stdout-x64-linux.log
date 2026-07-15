@@ -1,0 +1,36 @@
+-- Using cached openssl-openssl-openssl-3.4.0.tar.gz
+-- Cleaning sources at /home/runner/workspace/thirdparty/vcpkg/buildtrees/openssl/src/nssl-3.4.0-821e8e5bdc.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source /home/runner/workspace/thirdparty/vcpkg/downloads/openssl-openssl-openssl-3.4.0.tar.gz
+-- Applying patch cmake-config.patch
+-- Applying patch command-line-length.patch
+-- Applying patch script-prefix.patch
+-- Applying patch asm-armcap.patch
+-- Applying patch windows/install-layout.patch
+-- Applying patch windows/install-pdbs.patch
+-- Applying patch unix/android-cc.patch
+-- Applying patch unix/move-openssldir.patch
+-- Applying patch unix/no-empty-dirs.patch
+-- Applying patch unix/no-static-libs-for-shared.patch
+-- Using source at /home/runner/workspace/thirdparty/vcpkg/buildtrees/openssl/src/nssl-3.4.0-821e8e5bdc.clean
+openssl requires Linux kernel headers from the system package manager.
+   They can be installed on Alpine systems via `apk add linux-headers`.
+   They can be installed on Ubuntu systems via `apt install linux-libc-dev`.
+
+-- Getting CMake variables for x64-linux
+-- Getting CMake variables for x64-linux-dbg
+-- Getting CMake variables for x64-linux-rel
+-- Configuring x64-linux-dbg
+-- Configuring x64-linux-rel
+-- Building x64-linux-dbg
+-- Installing x64-linux-dbg
+-- Building x64-linux-rel
+-- Installing x64-linux-rel
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/lib/pkgconfig/openssl.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/debug/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/debug/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/debug/lib/pkgconfig/openssl.pc
+-- Installing: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/share/openssl/usage
+-- Installing: /home/runner/workspace/thirdparty/vcpkg/packages/openssl_x64-linux/share/openssl/copyright
+-- Performing post-build validation

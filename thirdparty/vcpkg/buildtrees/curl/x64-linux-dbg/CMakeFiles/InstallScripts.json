@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/runner/workspace/thirdparty/vcpkg/buildtrees/curl/x64-linux-dbg/cmake_install.cmake",
+		"/home/runner/workspace/thirdparty/vcpkg/buildtrees/curl/x64-linux-dbg/lib/cmake_install.cmake",
+		"/home/runner/workspace/thirdparty/vcpkg/buildtrees/curl/x64-linux-dbg/docs/examples/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

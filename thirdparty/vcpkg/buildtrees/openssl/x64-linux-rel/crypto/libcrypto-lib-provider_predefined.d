@@ -1,0 +1,11 @@
+crypto/libcrypto-lib-provider_predefined.o: \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/crypto/provider_predefined.c \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/core.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/types.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/e_os2.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/macros.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/opensslconf.h \
+ include/openssl/configuration.h include/openssl/opensslv.h \
+ include/openssl/safestack.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/include/openssl/stack.h \
+ ../src/nssl-3.4.0-821e8e5bdc.clean/crypto/provider_local.h

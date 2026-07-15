@@ -1,0 +1,14 @@
+Downloading bzip2-1.0.8.tar.gz, trying https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+Successfully downloaded bzip2-1.0.8.tar.gz
+-- Extracting source /home/runner/workspace/thirdparty/vcpkg/downloads/bzip2-1.0.8.tar.gz
+-- Applying patch fix-import-export-macros.patch
+-- Using source at /home/runner/workspace/thirdparty/vcpkg/buildtrees/bzip2/src/bzip2-1-336d4794a3.clean
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/lib/pkgconfig/bzip2.pc
+-- Fixing pkgconfig file: /home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/debug/lib/pkgconfig/bzip2.pc
+-- Installing: /home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/share/bzip2/copyright
+-- Adjusted RPATH of '/home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/tools/bzip2/bzip2' (From '/nix/store/9p0szbp369clywas4gmdmb486hhaq654-nix-shell/lib:/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib:/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Adjusted RPATH of '/home/runner/workspace/thirdparty/vcpkg/packages/bzip2_x64-linux/tools/bzip2/bzip2recover' (From '/nix/store/9p0szbp369clywas4gmdmb486hhaq654-nix-shell/lib:/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib:/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib' -> To '$ORIGIN:$ORIGIN/../../lib')
+-- Performing post-build validation

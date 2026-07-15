@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/runner/workspace/thirdparty/vcpkg/buildtrees/libpng/x64-linux-dbg/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
